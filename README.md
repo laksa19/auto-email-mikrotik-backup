@@ -5,7 +5,9 @@ https://wiki.mikrotik.com/wiki/Send_Backup_email
 
 
 ## Enable Allow less secure apps [Gmail]
-enable "Allow less secure apps" Gmail melalui link berikut https://myaccount.google.com/security?utm_source=OGB&utm_medium=act&pli=1#connectedapps
+enable "Allow less secure apps" Gmail melalui link berikut
+
+https://myaccount.google.com/security?utm_source=OGB&utm_medium=act&pli=1#connectedapps
 
 ![Allow less secure apps](https://raw.githubusercontent.com/laksa19/auto-email-mikrotik-backup/master/img/1.png)
 
