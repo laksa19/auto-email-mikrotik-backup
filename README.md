@@ -30,6 +30,8 @@ Source :
 :log info "backup being emailed"
 /tool e-mail send to="email.penerima@gmail.com" subject=([/system identity get name] . \
 " Backup") from=MikrotikKemangi file=$backupfile server=74.125.136.109
+:delay 10s
+/file remove $backupfile
 :log info "backup finished"
 
 ```
