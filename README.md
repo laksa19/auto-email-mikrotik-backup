@@ -23,7 +23,11 @@ Source :
 ```
 
 :log info "backup beginning now"
-:global backupfile ("Backup-Mikrotik-Kemangi-" . [/system clock get time])
+:global date [/system clock get date]
+:global d [:pick $date 4 6]
+:global m [:pick $date 0 3] 
+:global y [:pick $date 7 11]
+:global backupfile ("Backup-Mikrotik-Kemangi-" . [/system clock get time]."@"."$m-$d-$y" )
 /system backup save name=$backupfile
 :log info "backup pausing for 10s"
 :delay 10s
